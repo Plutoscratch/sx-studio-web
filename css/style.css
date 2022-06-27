@@ -1,0 +1,102 @@
+* {font-family:Dosis,HYRunYuan-65J;margin: 0;padding: 0;box-sizing: border-box;transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+        /*导航栏*/
+        .menu {background:rgba(255, 255, 255, 0.2);backdrop-filter: blur(20px);top:0;height:50px;position: fixed;overflow: hidden;width: 100%;box-shadow: 0 2px 15px 0 rgb(100, 100, 100);}
+        .menu ul {list-style-type: none;line-height: 50px;}
+        .menu ul li {float: left;}
+        .menu ul li img {margin: 5px;cursor: pointer;}
+        .menu ul li a {text-decoration: none;display: block;width: 100px;text-align: center;color: rgb(0, 0, 0);}
+		.menu ul li h3 {text-decoration: none;display: block;width: 500px;text-align: center;color: rgb(0, 0, 0);}
+        .menu ul li a:hover {background: #555;color: #fff;}
+        /*布局*/
+        .title {
+            color:#555;
+            font-size: 20px;
+	        margin-top: 80px;
+
+        }
+        .line {
+            margin: 0 auto; 
+            margin-top: 15px;
+            width: 80%;
+            height: 1px;
+            border-radius: 10px;
+            border-top: 5px solid rgb(90, 90, 90);
+        }
+        .subtitle {
+            color:#555;
+            font-size: 14px;
+	        margin-top: 20px;
+        }
+        /*内容*/
+        .content {width: 1300px;margin: auto;}
+        .content-left {width: 1000px;display:table-cell;vertical-align: middle;}
+        .content-right {width: 300px;}
+        [class*="content-"] {float: left;padding: 15px;}
+        .card {background: rgb(255, 255, 255);width: 100%;box-shadow: 0 10px 20px 2px #cacaca;margin: 20px;border-radius: 10px;}
+        .card .title {line-height: 55px;height: 40px;position: relative;padding-left: 13px;margin: 24px 0;}
+        .card .title:before {content: "";background-color: #555;width: 7px;height: 35px;position: absolute;left: 0;top: 50%;margin-top: -8px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+        .card .text {background: #555;padding: 10px;color: #fff;}
+        .card .text-new ul {list-style-type: none;padding: 10px;overflow: hidden;color:#000;background:#fff;border-radius: 10px;}
+        .card .text-new ul li span a {color: #000;padding: 5px 0;float: left;text-decoration: none;}
+        .card .text-new ul li span {float: right;display: block;width: 100%;text-align: right;}
+        .card .text-name {padding: 10px;overflow: hidden;color:#555;}
+        .card .text-name img {border-radius: 10px;box-shadow: 0 5px 5px 2px rgba(0,0,0,.2);}
+        .card .text-name span {width: 100%;float: left;text-align: center;}
+        .card .bottom {background: #fff;height: 50px;border-radius: 10px;}
+        .card .bottom span {width: 50%;display: block;float: left;text-align: center;line-height: 50px;}
+
+        /* 下拉按钮样式 */
+        .dropbtn {
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            color: #555;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            z-index: 998;
+        }
+
+        /* 容器 <div> - 需要定位下拉内容 */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            z-index: 998;
+        }
+
+        /* 下拉内容 (默认隐藏) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 998;
+        }
+
+        /* 下拉菜单的链接 */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            z-index: 998;
+        }
+
+        /* 鼠标移上去后修改下拉菜单链接颜色 */
+        .dropdown-content a:hover {background-color: rgb(120, 120, 120);color:#f1f1f1;z-index: 998;}
+
+        /* 在鼠标移上去后显示下拉菜单 */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            z-index: 998;
+        }
+
+        /* 当下拉内容显示后修改下拉按钮的背景颜色 */
+        .dropdown:hover .dropbtn {
+            background-color: rgb(120, 120, 120);
+            color: #fff;
+            z-index: 998;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
