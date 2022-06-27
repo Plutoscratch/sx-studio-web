@@ -1,6 +1,16 @@
 * {font-family:Dosis,HYRunYuan-65J;margin: 0;padding: 0;box-sizing: border-box;transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+        *::-webkit-scrollbar-track {
+            background-color: #dddddd;
+        }
+        *::-webkit-scrollbar {
+            width: 10px;
+        }
+        *::-webkit-scrollbar-thumb {
+            background-color: rgb(120, 120, 120);
+            border-radius: 10px;
+        }
         /*导航栏*/
-        .menu {background:rgba(255, 255, 255, 0.2);backdrop-filter: blur(20px);top:0;height:50px;position: fixed;overflow: hidden;width: 100%;box-shadow: 0 2px 15px 0 rgb(100, 100, 100);}
+        .menu {background:rgba(255, 255, 255, 0.5);backdrop-filter: blur(20px);top:0;height:50px;position: fixed;overflow: hidden;width: 100%;box-shadow: 0 2px 15px 0 rgb(100, 100, 100);}
         .menu ul {list-style-type: none;line-height: 50px;}
         .menu ul li {float: left;}
         .menu ul li img {margin: 5px;cursor: pointer;}
@@ -35,7 +45,7 @@
         .card {background: rgb(255, 255, 255);width: 100%;box-shadow: 0 10px 20px 2px #cacaca;margin: 20px;border-radius: 10px;}
         .card .title {line-height: 55px;height: 40px;position: relative;padding-left: 13px;margin: 24px 0;}
         .card .title:before {content: "";background-color: #555;width: 7px;height: 35px;position: absolute;left: 0;top: 50%;margin-top: -8px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
-        .card .text {background: #555;padding: 10px;color: #fff;}
+        .card .text {background: #555;padding: 10px;color: #fff;border: none;}
         .card .text-new ul {list-style-type: none;padding: 10px;overflow: hidden;color:#000;background:#fff;border-radius: 10px;}
         .card .text-new ul li span a {color: #000;padding: 5px 0;float: left;text-decoration: none;}
         .card .text-new ul li span {float: right;display: block;width: 100%;text-align: right;}
@@ -99,7 +109,31 @@
             z-index: 998;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         }
-        .footer {background: #555;height: 50px;overflow: hidden;width: 100%;box-shadow: 0 2px 10px 0 #f1f1f1;}
+        .footer {margin-top: 500px;background: #555;height: 50px;overflow: hidden;width: 100%;box-shadow: 0 2px 10px 0 #f1f1f1;}
         .footer span {display: block;text-align: center;line-height: 50px;color: #fff;}
         .footer a {color: #3399ff;}
+        .button {
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            background-color: #f5f5f5;
+            color: #555;
+            z-index: 998;
+            border-radius: 5px;
+            position: relative;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: rgb(120, 120, 120);
+            color: #fff;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        a {
+            text-decoration: none;
+            color:#555
+        }
+        a:hover {
+            color:#fff
+        }
         
